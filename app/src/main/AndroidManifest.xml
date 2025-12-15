@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permiso de red -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FishAndChill"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_Proyecto">
+
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Splash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".Activities.ShopActivity" />
+        <activity android:name=".Activities.LogInActivity" android:exported="false" />
+        <activity android:name=".Activities.RegisterActivity" android:exported="false" />
+        <activity android:name=".Activities.MenuActivity" />
+        <activity android:name=".Activities.FaqActivity" android:exported="false" />
+        <activity android:name=".Activities.AskQuestionActivity" />
+        <activity android:name=".Activities.VideoActivity" android:exported="false"
+            android:hardwareAccelerated="true"
+            />
+
+
+    </application>
+</manifest>
