@@ -9,6 +9,7 @@ import com.example.android_proyecto.Models.UserLogIn;
 import com.example.android_proyecto.Models.UserRegister;
 import com.example.android_proyecto.Models.Video;
 import com.example.android_proyecto.Models.IssueRequest;
+import com.example.android_proyecto.Models.Group;
 
 import java.util.List;
 
@@ -89,4 +90,13 @@ public interface ApiService {
 
     @POST("info/issue")
     Call<Void> postIssue(@Body IssueRequest issue);
+
+    @GET("info/groups")
+    Call<List<Group>> getGroups();
+
+    @POST("info/groups/{groupId}/")
+    Call<ResponseBody> joinGroup(
+            @Header("Authorization") String token,
+            @Path("groupId") int groupId
+    );
 }
