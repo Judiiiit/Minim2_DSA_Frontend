@@ -1,32 +1,5 @@
-# 🎣 Fish & Chill: Fishing & PvP Combat
+He afegit un model que es igual que el dto del backend de Groups. També he afegit les dues rutes necessàries a ApiService (a baix de tot). He creat activity_groups.xml (hi ha un RecicleView que utilitza els items per afegir cada grup) i item_groups.xml (un item per grup creat amb botó de Join per entrar a un grup) i GroupAdapter. He afegit en el AndroidManifest la linia de l'activity necessària. En el activitymenu he afegit un botó (apareix a dalt a la dreta al costat esquerre del botó de settings amb el dibuix d'unes persones) que serveix per entrar a l'activity on es veuen els diferents grups i també es veu els grups dels quals formes part (posa joined i no et deixa tornar a entrar a un grup pq ja hi formes part). He fet també els canvis necessaris perquè se't guardi a la teva sessió els grups als quals estàs unit (això en el SessionManager).
 
-Welcome to the central repository for **Fish & Chill**! This project is a multiplayer fishing simulation game with a twist: survival and Player-vs-Player (PvP) competition.
+Funciona tot l'esperat. Et deixa unir-te a un grup del qual encara no formes part i t'apareixen tots els grups que hi ha creats.
 
-Developed as a project for the **Disseny i Servei d'Aplicacions (DSA)** course at the UPC.
-
-
-## 🌟 Game Concept
-
-Fish & Chill places you in a world where the tranquility of fishing merges with the adrenaline of competition.
-
-Travel through various lakes and fishing areas and capture unique species. But beware! Other players can challenge you to steal your coveted fishing *spot* by eliminating you with their rod, which also functions as a weapon.
-
-
-### Key Features
-
-* **Multi-Zone Fishing:** Explore different biomes and lakes to find rare fish species.
-* **PvP Combat for Spots:** Eliminate other users from fishing zones using your rod as a makeshift weapon to secure your place.
-* **Game Economy:** A complete shop system to **buy** new rods (weapons and fishing tools) and **sell** your catches.
-
-
-## ⚙️ Project Structure
-
-The project is divided into two main repositories following a client-server architecture:
-
-| **Backend (API)** | [JoelRojasLlauradoUPC/DSA_FishandChill_Backend](https://github.com/JoelRojasLlauradoUPC/DSA_FishandChill_Backend.git) |
-| **Frontend (Client)** | [Judiiiit/DSA_FishandChill_Frontend](https://github.com/Judiiiit/DSA_FishandChill_Frontend.git) |
-
-
-## 💻 Backend API
-
-The backend exposes a simple RESTful game API with authentication, item catalog, in-game actions, and a shop.
+No queda res pendent.
