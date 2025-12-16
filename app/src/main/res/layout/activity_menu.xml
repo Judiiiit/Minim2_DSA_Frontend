@@ -7,6 +7,20 @@
     android:backgroundTintMode="src_in">
 
     <ImageButton
+        android:id="@+id/btnReportIssue"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Report issue"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/announce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
         android:id="@+id/btnSettings"
         android:layout_width="60dp"
         android:layout_height="55dp"

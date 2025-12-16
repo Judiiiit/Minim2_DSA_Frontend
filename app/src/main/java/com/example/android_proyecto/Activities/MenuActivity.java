@@ -26,7 +26,8 @@ import retrofit2.Response;
 public class MenuActivity extends AppCompatActivity {
 
     private Button btnGoGame, btnGoShop, btnLogout;
-    private ImageButton btnSettings;
+    private ImageButton btnSettings, btnReportIssue;
+    ;
     private FrameLayout settingsPanel;
     private Button btnBackFromSettings;
 
@@ -48,6 +49,8 @@ public class MenuActivity extends AppCompatActivity {
         btnLogout = findViewById(R.id.btnLogout);
 
         btnSettings = findViewById(R.id.btnSettings);
+        btnReportIssue = findViewById(R.id.btnReportIssue);
+
 
         settingsPanel = findViewById(R.id.settingsPanel);
         btnBackFromSettings = findViewById(R.id.btnBackFromSettings);
@@ -65,6 +68,11 @@ public class MenuActivity extends AppCompatActivity {
 
         btnGoShop.setOnClickListener(v -> {
             Intent intent = new Intent(MenuActivity.this, ShopActivity.class);
+            startActivity(intent);
+        });
+
+        btnReportIssue.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuActivity.this, ReportIssueActivity.class);
             startActivity(intent);
         });
 

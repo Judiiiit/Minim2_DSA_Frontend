@@ -8,6 +8,7 @@ import com.example.android_proyecto.Models.User;
 import com.example.android_proyecto.Models.UserLogIn;
 import com.example.android_proyecto.Models.UserRegister;
 import com.example.android_proyecto.Models.Video;
+import com.example.android_proyecto.Models.IssueRequest;
 
 import java.util.List;
 
@@ -85,4 +86,7 @@ public interface ApiService {
 
     @GET("info/videos")
     Call<List<Video>> getVideos();
+
+    @POST("info/issue")
+    Call<Void> postIssue(@Body IssueRequest issue);
 }

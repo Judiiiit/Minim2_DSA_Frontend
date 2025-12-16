@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondologin"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvIssueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pixel_font"
+        android:text="Report abuse"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/formPanelIssue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel_dark"
+        android:orientation="vertical"
+        android:padding="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <!-- Date (se rellena automático en Java y lo dejamos solo lectura) -->
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_dark"
+            android:fontFamily="@font/pixel_font"
+            android:hint="Date"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCFFFFFF"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:clickable="false"
+            android:enabled="false" />
+
+        <EditText
+            android:id="@+id/etInformer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input_dark"
+            android:fontFamily="@font/pixel_font"
+            android:hint="Informer (username or email)"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input_dark"
+            android:fontFamily="@font/pixel_font"
+            android:gravity="top"
+            android:hint="Message"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#CCFFFFFF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSendIssue"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/pixel_button_bg"
+            android:fontFamily="@font/pixel_font"
+            android:text="Send"
+            android:textSize="14sp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
